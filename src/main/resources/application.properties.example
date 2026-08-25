@@ -1,0 +1,25 @@
+# Exemplo de configuração - copie para application.properties ou use variáveis de ambiente
+spring.application.name=ApiLari
+server.port=8080
+
+# Conexão MongoDB Atlas ou Local
+# Exemplo Atlas: mongodb+srv://<usuario>:<senha>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
+spring.data.mongodb.uri=mongodb://localhost:27017/portfoliodb
+spring.mongodb.uri=${spring.data.mongodb.uri}
+
+# Caminho para o arquivo JSON de credencial do Firebase (ou conteúdo JSON em FIREBASE_CONFIG_JSON)
+firebase.config.path=
+firebase.config.json=
+
+# E-mails ou UIDs de Administradores permitidos a criar/editar/excluir (separados por vírgula)
+app.security.admin-emails=admin@seudominio.com
+app.security.admin-uids=
+
+# Origens permitidas para requisições CORS
+app.cors.allowed-origins=http://localhost:4200,http://localhost:3000,https://seusite.com
+
+# Blindagem contra vazamento de stack traces
+server.error.include-stacktrace=never
+server.error.include-message=never
+server.error.include-exception=false
+server.error.whitelabel.enabled=false
