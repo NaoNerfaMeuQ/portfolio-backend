@@ -1,5 +1,5 @@
 # Exemplo de configuração - copie para application.properties ou use variáveis de ambiente
-spring.application.name=ApiLari
+spring.application.name=larissa-hub-api
 server.port=8080
 
 # Conexão MongoDB Atlas ou Local

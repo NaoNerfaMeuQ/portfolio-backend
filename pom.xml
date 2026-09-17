@@ -8,12 +8,12 @@
         <version>4.1.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
+    <groupId>dev.marcoscasagrande</groupId>
     <artifactId>portfolio-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ApiLari</name>
-    <description>ApiLari</description>
-    <url/>
+    <name>Larissa Hub API</name>
+    <description>API segura para o portfólio editorial Larissa Hub</description>
+    <url>https://github.com/NaoNerfaMeuQ/portfolio-backend</url>
     <licenses>
         <license/>
     </licenses>
@@ -67,6 +67,11 @@
             <groupId>com.google.firebase</groupId>
             <artifactId>firebase-admin</artifactId>
             <version>9.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.23.2</version>
         </dependency>
     </dependencies>
 
